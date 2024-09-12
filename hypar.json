@@ -1,0 +1,66 @@
+{
+  "$schema": "https://hypar.io/Schemas/Function.json",
+  "id": "5d6c903d-fae2-4b82-9bdd-c01ea7e3cb4c",
+  "name": "searchable",
+  "description": "The Searchable function.",
+  "language": "C#",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "Level count": {
+        "type": "integer",
+        "minimum": 5,
+        "maximum": 1000,
+        "$hyparOrder": 0
+      },
+      "Level Names": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "$hyparEnumQuery": {
+          "query": "[*discriminator=Elements.Level].Name",
+          "selfDependency": true
+        },
+        "$hyparOrder": 1
+      },
+      "Searchable Level Names": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "$hyparEnumQuery": {
+          "query": "[*discriminator=Elements.Level].Name",
+          "selfDependency": true
+        },
+        "$searchable": true,
+        "$hyparOrder": 2
+      },
+      "Choices": {
+        "type": "string",
+        "enum": [
+          "First option",
+          "Second option",
+          "Third option"
+        ],
+        "$hyparOrder": 3
+      },
+      "Searchable Choices": {
+        "type": "string",
+        "enum": [
+          "First option",
+          "Second option",
+          "Third option"
+        ],
+        "$searchable": true,
+        "$hyparOrder": 4
+      }
+    }
+  },
+  "element_types": [
+    "https://schemas.hypar.io/Level.json"
+  ],
+  "repository_url": "https://github.com/hypar-io/function",
+  "last_updated": "0001-01-01T00:00:00",
+  "cli_version": "1.13.1-alpha.1"
+}

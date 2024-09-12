@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jamesbradleym/Dropbox (Personal)/Programming/Hypar/Searchable/dependencies/Searchable.Dependencies.csproj": {}
+  },
+  "projects": {
+    "/Users/jamesbradleym/Dropbox (Personal)/Programming/Hypar/Searchable/dependencies/Searchable.Dependencies.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jamesbradleym/Dropbox (Personal)/Programming/Hypar/Searchable/dependencies/Searchable.Dependencies.csproj",
+        "projectName": "Searchable.Dependencies",
+        "projectPath": "/Users/jamesbradleym/Dropbox (Personal)/Programming/Hypar/Searchable/dependencies/Searchable.Dependencies.csproj",
+        "packagesPath": "/Users/jamesbradleym/.nuget/packages/",
+        "outputPath": "/Users/jamesbradleym/Dropbox (Personal)/Programming/Hypar/Searchable/dependencies/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jamesbradleym/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/Users/jamesbradleym/.nuget/packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Hypar.Elements": {
+              "target": "Package",
+              "version": "[2.2.0-alpha.29, )"
+            },
+            "Hypar.Functions": {
+              "target": "Package",
+              "version": "[1.13.1-alpha.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

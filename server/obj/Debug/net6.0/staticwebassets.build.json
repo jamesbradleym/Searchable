@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OCN75KllMJgFB6AmOHGfB6nHydd305zbf0WvYgT/2wQ=",
+  "Source": "Searchable.Server",
+  "BasePath": "_content/Searchable.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
