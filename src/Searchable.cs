@@ -17,9 +17,6 @@ namespace Searchable
       // Your code here.
       var output = new SearchableOutputs();
 
-      // Gather inputs.
-      var choices = input.Choices;
-
       foreach (var elevation in Enumerable.Range(0, input.LevelCount))
       {
         var level = new Level

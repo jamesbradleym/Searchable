@@ -15,8 +15,16 @@ The Searchable function.
   "string",
   "null"
 ]||
-|Choices|string||
-|Searchable Choices|string||
+|Choices|[
+  "string",
+  "null"
+]||
+|Searchable Choices|[
+  "string",
+  "null"
+]||
+|HyparPick Element|object||
+|Searchable HyparPickElement|object||
 
 
 <br>

@@ -37,7 +37,10 @@
         "$hyparOrder": 2
       },
       "Choices": {
-        "type": "string",
+        "type": [
+          "string",
+          "null"
+        ],
         "enum": [
           "First option",
           "Second option",
@@ -46,7 +49,10 @@
         "$hyparOrder": 3
       },
       "Searchable Choices": {
-        "type": "string",
+        "type": [
+          "string",
+          "null"
+        ],
         "enum": [
           "First option",
           "Second option",
@@ -54,6 +60,39 @@
         ],
         "$searchable": true,
         "$hyparOrder": 4
+      },
+      "HyparPick Element": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "$hyparPickElement": {
+          "context": "[*discriminator=Elements.Level]",
+          "selfDependency": true,
+          "textQuery": "Name"
+        }
+      },
+      "Searchable HyparPickElement": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "$hyparPickElement": {
+          "context": "[*discriminator=Elements.Level]",
+          "selfDependency": true,
+          "textQuery": "Name",
+          "$searchable": true
+        }
       }
     }
   },
